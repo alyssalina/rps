@@ -22,7 +22,7 @@ handleClick(event) {
   console.log('Computer picks ' + computerchoice)
   console.log('User picks ' + userchoiceSelected)
 
-  const gameresult = userchoiceSelected;
+  const gameresult = "You chose " + userchoiceSelected + "! Computer chose " + computerchoice + "!";
   const nextgameresults = this.state.gameresults.concat(this.state.currentgameresult);
   
   this.setState({
@@ -40,7 +40,7 @@ handleClick(event) {
           <h1>Rock Paper Scissors</h1>
         </div>
 
-        <p className = "App-Intro"> Choose your weapon!</p>
+        <p className = "Subheadings"> Choose your weapon!</p>
 
         <div className = "Buttonspot">
           <button onClick={this.handleClick} className = "RPSSelection" id="ROCK">ROCK!</button>
@@ -48,6 +48,7 @@ handleClick(event) {
           <button onClick={this.handleClick} className = "RPSSelection" id="SCISSORS">SCISSORS!</button>
         </div>
             <p className="Currentresults"> {this.state.currentgameresult} </p>
+            <p className = "Subheadings"> Past Results </p>
             {this.state.gameresults.map((todo,index) => <p key={index}>{todo}</p>)}
       </div>
     );

@@ -32,8 +32,10 @@
   color: white;
 }
 
-.App-intro {
+.Subheadings {
   font-size: large;
+  color: #0D4A53;
+  font-style: underline;
 }
 
 @keyframes App-logo-spin {
