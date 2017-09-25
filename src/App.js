@@ -55,4 +55,6 @@ handleClick(event) {
   }
 }
 
+//*To do - add compontent that tallies the score and can be refreshed, seperate from the results list.*//
+
 export default App;
